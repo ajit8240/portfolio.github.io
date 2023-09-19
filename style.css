@@ -1,0 +1,299 @@
+body{
+    background-color: #0c0c0c;
+    font-family: 'Croissant One', cursive;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding:4rem ;
+}
+
+/* this is important transition  */
+.navbar{
+transition: 1s;
+background-color: #0c0c0c;
+}
+
+
+
+section{
+    transition: .9s;
+}
+
+
+.navbar-brand h3{
+    color: white;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.nav-link{
+    color: white;
+    margin-left: 12px;
+    transition: 0.5s;
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 18px;
+
+}
+
+.nav-link:hover{
+    color: white;
+    transform: scale(1.2); 
+}
+
+
+.active{
+    color: #f9004d !important;
+}
+
+
+
+
+nav i{
+  color: #f9004d;
+  font-size: 30px;
+}
+
+span{
+    color: #f9004d;
+}
+
+#header-hero{
+    padding: 5rem 0;
+}
+
+.btn:hover{
+    background-color:#9e0032;
+    color: white;
+    
+}
+
+
+
+#header-hero img{
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.round-img{
+    border-top-right-radius: 20rem;
+    border-bottom-left-radius: 20rem;
+    overflow: hidden;
+    }
+
+#header-hero h1{
+    color: white;
+
+}
+
+#header-hero h3{
+    color: white;
+}
+
+#header-hero h4{
+    color:rgb(255, 105, 143);
+}
+
+#about {
+    background-color: #191919;
+}
+
+#about img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+
+}
+
+
+hr{
+    max-width: 300px;
+    height: 5px;
+    background-color:#f9004d;
+    text-align: center;
+}
+
+
+.text h5{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 22px;
+}
+
+.text p{
+    color: #fcfc;
+    letter-spacing: 1px;
+} 
+
+.btn{
+    background-color: #f9004d;
+    color: white;
+    border: 2px solid transparent;
+    transition: .4s;
+    padding:5px  23px;
+
+}
+
+.btn:hover{
+    background-color: transparent;
+    border: 2px solid #f9004d;
+}
+
+.card a{
+    font-weight: bold;
+}
+.card i{
+    font-size: 40px;
+    color: #f9004d;
+    margin: 20px 0;
+    transition: .3s;
+}
+
+.card i:hover{
+    color: #ff2a6e;
+}
+
+
+
+.card{
+    background-color: #191919;
+    transition: .4s;
+
+}
+
+@media (max-width:500px){
+    .card{
+    margin:0 13px;   
+    }
+}
+
+.card:hover{
+    background-color:#9e0032;
+    transform: scale(1.1);
+}
+
+
+.card h5{
+    color: white;
+    font-size: 23px;
+}
+
+.card p{
+    color: #fcfc;
+}
+
+#contact{
+    background-color: #191919;
+
+}
+
+.social a{
+  width: 45px;
+  height: 45px;
+  background-color: #f9004d;
+ display:flex;
+ justify-content: center;
+ align-items: center;
+ margin: 15px 8px;
+ border-radius: 50%;
+ font-size: 23px;
+ color: white;
+ text-decoration: none;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.end{
+    color: #f9004d;
+}
+
+
+/* fade reveal effect  */
+ .reveal {
+    position: relative;
+    opacity: 0;
+  }
+  
+  .reveal.active {
+    opacity: 1;
+  }
+  .active.fade-bottom {
+    animation: fade-bottom 0.9s ease-in;
+  }
+  .active.fade-left {
+    animation: fade-left  0.9s ease-in;
+  }
+  .active.fade-right {
+    animation: fade-right  0.9s ease-in;
+  }
+  @keyframes fade-bottom {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-left {
+    0% {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fade-right {
+    0% {
+      transform: translateX(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }    
+  /* copy and past where you want animation */
+  /* reveal fade-left */
+
+
+  /* floating whatsapp  */
+  .float{
+	position:fixed;
+	width:50px;
+	height:50px;
+	bottom:40px;
+	right:20px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 1px 1px 2px #999;
+    z-index:100;
+    transition: .3s;
+}
+
+.my-float{
+	margin-top:12px;
+}
+
+.my-float,.float:hover{
+    transform: scale(1.1);
+	box-shadow: 1px 1px 8px #999;
+
+
+}
